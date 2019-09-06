@@ -45,10 +45,11 @@
                     <td field-key='title'>{{ $role->title }}</td>
                                 <td field-key='permission'>
                                     @foreach ($role->permission as $singlePermission)
-                                        <span class="label label-info label-many">{{ $singlePermission->title }}</span>
+                                        <span class="label label-info label-many">@lang('global.'.$singlePermission->title)</span>
+                                        @lang('global.'.$singlePermission->title)
                                     @endforeach
                                 </td>
-                                                                <td>
+                                <td>
                                     @can('role_view')
                                     <a href="{{ route('admin.roles.show',[$role->id]) }}" class="btn btn-xs btn-primary">@lang('global.app_view')</a>
                                     @endcan

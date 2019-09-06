@@ -38,8 +38,8 @@
                                 @can('permission_delete')
                                     <td></td>
                                 @endcan
-
-                                <td field-key='title'>{{ $permission->title }}</td>
+                                {{-- <td field-key='title'>{{ $permission->title }}</td> --}}
+                                <td field-key='title'>@lang('global.'.$permission->title)</td>
                                                                 <td>
                                     @can('permission_view')
                                     <a href="{{ route('admin.permissions.show',[$permission->id]) }}" class="btn btn-xs btn-primary">@lang('global.app_view')</a>

@@ -1,12 +1,60 @@
 <?php
 
 return [
-		'user-management' => [		'title' => 'User management',		'fields' => [		],	],
-		'permissions' => [		'title' => 'Permissions',		'fields' => [			'title' => 'Title',		],	],
-		'roles' => [		'title' => 'Roles',		'fields' => [			'title' => 'Title',			'permission' => 'Permissions',		],	],
-		'users' => [		'title' => 'Users',		'fields' => [			'name' => 'Name',			'email' => 'Email',			'password' => 'Password',			'role' => 'Role',			'remember-token' => 'Remember token',		],	],
-		'events' => [		'title' => 'Events',		'fields' => [			'name' => 'Name',			'event-date' => 'Event date',		],	],
-		'invitations' => [		'title' => 'Invitations',		'fields' => [			'event' => 'Event',			'email' => 'Email',			'sent-at' => 'Sent at',			'accepted-at' => 'Accepted at',			'rejected-at' => 'Rejected at',		],	],
+	
+	'user-management' => [
+		'title' => 'Administración de usuarios',
+		'fields' => [
+		],
+	],
+	
+	'permissions' => [
+		'title' => 'Permisos',
+		'fields' => [
+			'title' => 'Permiso',
+		],
+	],
+	
+	'roles' => [
+		'title' => 'Roles',
+		'fields' => [
+			'title' => 'Rol',
+			'permission' => 'Permiso',
+		],
+	],
+	
+	'users' => [
+		'title' => 'Usuarios',
+		'fields' => [
+			'name' => 'Nombre',
+			'email' => 'Email',
+			'password' => 'Password',
+			'role' => 'Rol',
+			'remember-token' => 'Remember token',
+		],
+	],
+	
+	'events' => [
+		'title' => 'Eventos',
+		'fields' => [
+			'name' => 'Nombre',
+			'event-date' => 'Fecha evento',
+			'sent-at' => 'Enviado',
+			'accepted-at' => 'Aceptado',
+			'rejected-at' => 'Rechazado',
+		],
+	],
+	
+	'invitations' => [
+		'title' => 'Invitaciones',
+		'fields' => [
+			'event' => 'Evento',
+			'email' => 'Email',
+			'sent-at' => 'Enviado',
+			'accepted-at' => 'Aceptado',
+			'rejected-at' => 'Rechazado',
+		],
+	],
 	'app_create' => 'Crear',
 	'app_save' => 'Guardar',
 	'app_edit' => 'Editar',
@@ -51,6 +99,7 @@ return [
 	'app_reset_password' => 'Reiniciar contraseña',
 	'app_email_greet' => 'Hola',
 	'app_confirm_password' => 'Confirmar contraseña',
+	'app_change_password' => 'Cambiar contraseña',
 	'app_please_select' => 'Por favor seleccione',
 	'app_questions' => 'Preguntas',
 	'app_question' => 'Pregunta',
@@ -76,4 +125,35 @@ return [
 	'app_tasks' => 'Tareas',
 	'app_status' => 'Estado',
 	'global_title' => 'Event Invitations',
+	//Permisions
+	'user_management_access' => 'Acceso a mantenimiento de usuarios',
+	'user_management_create' => 'Crear usuarios',
+	'user_management_edit' => 'Editar usuarios',
+	'user_management_view' => 'Lista de usuarios',
+	'user_management_delete' => 'Borrar usuarios',
+	'permission_access' => 'Permiso de acceso',
+	'permission_create' => 'Permiso de crear',
+	'permission_edit' => 'Permiso para editar',
+	'permission_view' => 'Permiso para listar',
+	'permission_delete' => 'Permiso para borrar',
+	'role_access' => 'Acceso a roles',
+	'role_create' => 'Crear roles',
+	'role_edit' => 'Editar roles',
+	'role_view' => 'Listar roles',
+	'role_delete' => 'Borrar roles',
+	'user_access' => 'Acceso usuario',
+	'user_create' => 'Crear usuarios',
+	'user_edit' => 'Editar usuarios',
+	'user_view' => 'Listar usuarios',
+	'user_delete' => 'Borrar usuarios',
+	'event_access' => 'Acceso a eventos',
+	'event_create' => 'Crear eventos',
+	'event_edit' => 'Editar eventos',
+	'event_view' => 'Listar eventos',
+	'event_delete' => 'Borrar eventos',
+	'invitation_access' => 'Acceso a invitaciones',
+	'invitation_create' => 'Crear invitaciones',
+	'invitation_edit' => 'Editar invitaciones',
+	'invitation_view' => 'Listar invitaciones',
+	'invitation_delete' => 'Borrar invitaciones',
 ];
